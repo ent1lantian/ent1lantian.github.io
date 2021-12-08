@@ -23,7 +23,7 @@ body {
 }
 
 #tupoy .new { opacity: 0; }
-#tupoy { background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6); margin-left : 100px; padding: 190px 0px 0px 100px; width: 350px; display: none; font-size: 45px;}
+#tupoy { margin-left : 100px; padding: 190px 0px 0px 100px; width: 350px; display: none; font-size: 45px;}
 #tupoy .div_opacity {
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
