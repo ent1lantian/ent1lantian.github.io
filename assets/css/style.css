@@ -1,0 +1,142 @@
+body {
+    height: 97vh;
+    background-size: cover;
+    background-color: #242424;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #f2f3f4;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#tupoy .new { opacity: 0; }
+#tupoy { background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6); margin-left : 100px; padding: 190px 0px 0px 100px; width: 350px; display: none; font-size: 45px;}
+#tupoy .div_opacity {
+  -webkit-transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -ms-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7a04eb;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav {
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link:hover {
+    color: #0267FF;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #0267FF;
+}
+
+.nav__link.error {
+    transform: rotate(160deg);
+    top: -25px;
+    right: -370px;
+}
+
+.nav__link.error:hover {
+    color: #EF3124;
+}
+
+.btn {
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    
+    top: -7px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #0267FF;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear, border-radius .3s;
+}
+
+.btn:hover {
+    background-color: #003688;
+    color: #242424;
+    border-radius: 5px;
+}
+
+.avatar {
+    left: 1000px;
+    margin: 0 15px;
+    padding: 8px 30px;
+    vertical-align: top;
+}
