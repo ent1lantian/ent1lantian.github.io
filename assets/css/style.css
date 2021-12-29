@@ -23,7 +23,21 @@ body {
 }
 
 #tupoy .new { opacity: 0; }
-#tupoy { margin-left : 100px; padding: 190px 0px 0px 100px; width: 350px; display: none; font-size: 45px;}
+#tupoy {
+    margin-left : 100px; 
+    padding: 190px 0px 0px 100px; 
+    width: 626px;
+    height: 210px;
+    display: none; 
+    font-size: 35px;
+    font-weight: bold;
+
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0s; /* Задержка перед началом */
+}
 #tupoy .div_opacity {
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -38,7 +52,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #7a04eb;
+    background: #0267FF;
 }
 
 ::-webkit-scrollbar-track {
@@ -54,6 +68,12 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
+
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0s; /* Задержка перед началом */
 }
 
 .header__inner {
@@ -65,7 +85,18 @@ body {
 .header__logo {
     font-size: 30px;
     font-weight: 700;
-    color: #fff;
+    color: #fff;    
+}
+.heading {
+    position: absolute;
+    width: 170px;
+    height: 37px;
+    left: 229px;
+    top: 22px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    color: #FFFFFF;
 }
 
 .nav {
@@ -135,8 +166,63 @@ body {
 }
 
 .avatar {
-    left: 1000px;
-    margin: 0 15px;
-    padding: 8px 30px;
-    vertical-align: top;
+    position: absolute;
+    width: 63.89px;
+    height: 50px;
+    left: 162px;
+    top: 15px;
 }
+
+.vector {
+    position: absolute;
+    width: 1920px;
+    height: 1048px;
+    left: 0px;
+    top: 355px;
+
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0s; /* Задержка перед началом */
+}
+
+.vector.smile {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 536px;
+    top: 395px;
+    
+    transform: rotate(-0.98deg);
+
+    animation-delay: 1.5s; /* Задержка перед началом */
+}
+
+.vector.text {
+    position: absolute;
+    width: 320px;
+    height: 74px;
+    left: 1030px;
+    top: 490px;
+    
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-16.5deg);
+
+    animation-delay: 1.5s; /* Задержка перед началом */
+}
+
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+    }
